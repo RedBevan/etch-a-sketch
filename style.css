@@ -1,0 +1,18 @@
+* {
+  box-sizing:border-box;
+}
+
+.container > div {
+  background-color: teal;
+  color: white;
+  width: 1fr;
+  height: 1fr;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
