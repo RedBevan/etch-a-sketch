@@ -1,18 +1,25 @@
+:root {
+  --row-number: 0;
+  --column-number: 0;
+}
+
 * {
   box-sizing:border-box;
 }
 
 .container > div {
   background-color: teal;
-  color: white;
-  width: 1fr;
-  height: 1fr;
+  color: green;
 }
 
 .container {
   display: grid;
   grid-gap: 1px;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(var(--column-number), 1fr);
+  grid-template-rows: repeat(var(--row-number), 1fr);
 }
+
+
 
