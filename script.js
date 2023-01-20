@@ -1,16 +1,50 @@
 const container = document.getElementById('container');
-let rows = document.getElementsByClassName('gridRow');
+
 let root = document.documentElement;
 
 function makeGrid(numberOfRows, numberOfColumns) {
   container.style.setProperty('--row-number', numberOfRows);
   container.style.setProperty('--column-number', numberOfColumns);
   for (i = 0; i <= numberOfRows * numberOfColumns; i++) {
-    let row = document.createElement('div');
-    container.appendChild(row).className = 'gridRow';
+    let cell = document.createElement('div');
+    cell.className = 'cell';
+    container.appendChild(cell);
+    console.log(cell.className);
   }; 
 };
 
+makeGrid(9, 9);
 
-makeGrid(20,20);
+const cells = document.getElementsByClassName('cell');
+
+const cellsArray = [...cells];
+
+cellsArray.forEach(function(cell) {
+  cell.addEventListener('mouseover', () => {
+    changeColor(cell);
+  });
+});
+
+function changeColor(cell) {
+  cell.setAttribute('class', 'hover');
+};
+
+const newGridBtn = document.getElementById('newGridBtn');
+
+newGridBtn.addEventListener('click', () => {
+  reset();
+});
+
+console.log(cellsArray);
+
+function reset() {
+  for (i=0; i<=cellsArray.length; i++) {
+    cellsArray[i].setAttribute('class', 'cell');
+  }
+};
+
+
+
+
+
 

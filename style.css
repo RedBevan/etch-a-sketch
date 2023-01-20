@@ -7,16 +7,42 @@
   box-sizing:border-box;
 }
 
-.container > div {
-  background-color: teal;
+.topDiv {
+  border: solid 2px blue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newGridBtn {
+  font-size: larger;
+}
+
+.gridContainer {
+  min-height: 200px;
+  min-width: 200px;
+  border: solid 5px red;
+  display: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  background-color:teal;
   color: green;
+}
+
+.hover {
+  background-color: violet;
 }
 
 .container {
   display: grid;
   grid-gap: 1px;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   grid-template-columns: repeat(var(--column-number), 1fr);
   grid-template-rows: repeat(var(--row-number), 1fr);
 }
