@@ -38,9 +38,12 @@ newGridBtn.addEventListener('click', () => {
 console.log(cellsArray);
 
 function reset() {
+  let rowNumberInput = prompt('How many rows?');
+  console.log(rowNumberInput);
+  makeGrid(rowNumberInput, rowNumberInput);
   for (i=0; i<=cellsArray.length; i++) {
     cellsArray[i].setAttribute('class', 'cell');
-  }
+  };
 };
 
 
