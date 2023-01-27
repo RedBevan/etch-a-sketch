@@ -31,6 +31,7 @@
 
 .new {
   background-color: teal;
+  border: solid 0.5px white;
 }
 
 .hover {
@@ -38,8 +39,8 @@
 }
 
 .container {
+  border: solid 3px green;
   display: grid;
-  grid-gap: 1px;
   width: 600px;
   height: 600px;
   grid-template-columns: repeat(var(--column-number), 1fr);

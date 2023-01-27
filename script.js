@@ -22,12 +22,16 @@ function changeColor(cell) {
   // cell.classList.toggle('hover');
 };
    
-makeGrid(5,5);
+makeGrid(20, 20);
 
 const resetBtn = document.getElementById('resetBtn');
 resetBtn.addEventListener('click', () => {
   resetCells();
 })
+
+//create prompt function with minimum and maximum values
+function getRowNumber() { prompt('How many rows? Choose a value between 10 and 64');
+}; 
 
 // This function resets the cells to 'cell' class
 function resetCells() {
