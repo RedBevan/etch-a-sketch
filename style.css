@@ -29,17 +29,12 @@
   justify-content: center;
 }
 
-.cell {
-  background-color:teal;
-  color: green;
+.new {
+  background-color: teal;
 }
 
 .hover {
   background-color: violet;
-}
-
-.new {
-  background-color: peru;
 }
 
 .container {
