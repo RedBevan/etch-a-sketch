@@ -38,6 +38,10 @@
   background-color: violet;
 }
 
+.new {
+  background-color: peru;
+}
+
 .container {
   display: grid;
   grid-gap: 1px;
