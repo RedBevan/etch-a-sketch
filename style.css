@@ -7,8 +7,8 @@
   box-sizing:border-box;
 }
 
+
 .topDiv {
-  border: solid 2px blue;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -22,7 +22,6 @@
 .gridContainer {
   min-height: 200px;
   min-width: 200px;
-  border: solid 5px red;
   display: 20px;
   display: flex;
   align-items: center;
@@ -30,8 +29,8 @@
 }
 
 .new {
-  background-color: teal;
-  border: solid 0.5px white;
+  background-color: black;
+
 }
 
 .hover {
@@ -39,7 +38,6 @@
 }
 
 .container {
-  border: solid 3px green;
   display: grid;
   width: 600px;
   height: 600px;
